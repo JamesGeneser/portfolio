@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+
+  
+.body{
+    font-family: 'Raleway ', sans-serif;
+    color:white
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.cardStack{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    height: 1000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    max-height: 150px;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo{
+    max-height: 100px; 
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.profileImg{
+    border-radius: 50%;
+   position: relative;
+   top: 10vh;
+   margin:2vh
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.introTxt{
+    border: 2px white solid;
+    color:white;
+    position:relative;
+    top: 20vh;
+    left:2vh;
+    margin: 2vh;
 }
+.developerTxt{
+    min-height: 30vh;
+    font-family: 'Raleway ', sans-serif, !important;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+.navElement{
+    color: white !important;
+    font-family: 'Raleway', sans-serif !important;
+   margin:5vh;
+   font-size: 15px !important;
+}
+
+.navElement:hover{
+    transform: scale(1.4);
+}
+
+
+.portfolio{
+    color: black;
+}
+
+
+
+.title{
+    font-family: 'Work Sans', sans-serif;
+font-size: 60px;
+font-weight: bold;
+}
+.subTitle{
+ font-weight: 100;
+    
+}
+
+.bootcampStamp{
+    max-width: 40vh ;
+    max-height: 40vh
+    
+}
+
+
+
+.cardTitle{
+    padding:2%;
+}
+
+
+
+
+
+
+
+.modalButton{
+    color: rgba(0,0,0,0.55);
+}
+
+.resume{
+    max-width: 100%;
+}
+.homeExtra{
+    margin: 50vh
+}
+
+
+
+
+
+.portfolioTxt{
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    
+}
+
+
+.portfolioCard{
+    font-family: 'Raleway';
+    width: 80%;
+    color: white;
+    margin: 2%;
+    
+}
+
+.portfolioImg{
+    width: 100%;
+}
+.portfolioImg:hover{
+    transform: scale(1.02);
+}
+
+
+.icon{
+    max-width: 18%;
+}
+
+.iconContainer{
+    max-width: 20%;
+}
+
+
