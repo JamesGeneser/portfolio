@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.afb13df4.css",
+    "main.js": "/portfolio/static/js/main.6f00b4d8.js",
+    "static/media/birdNerd.png": "/portfolio/static/media/birdNerd.94d06a9894751679a9cd.png",
+    "static/media/DiscoveringDenver.png": "/portfolio/static/media/DiscoveringDenver.c3822ad8f84218f14094.png",
+    "static/media/profileLogo.png": "/portfolio/static/media/profileLogo.de2bf0f204e8087ff9fa.png",
+    "static/media/Librarian.png": "/portfolio/static/media/Librarian.7adaa9eb5c924921989a.png",
+    "static/media/Resume23Big.jpg": "/portfolio/static/media/Resume23Big.112c624e9390a3186bc7.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.c93f8ae2076602c31487.jpg",
+    "static/media/universityDenverBootcamp.png": "/portfolio/static/media/universityDenverBootcamp.7d4202799bc48a8a0a7d.png",
+    "index.html": "/portfolio/index.html",
+    "main.afb13df4.css.map": "/portfolio/static/css/main.afb13df4.css.map",
+    "main.6f00b4d8.js.map": "/portfolio/static/js/main.6f00b4d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afb13df4.css",
+    "static/js/main.6f00b4d8.js"
+  ]
+}
