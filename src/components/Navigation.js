@@ -34,7 +34,7 @@ function Navigation() {
             <HomePortfolio as />
 
             <Nav.Link
-              className="navElement"
+              className="nav-item navElement"
               target="_blank"
               href="https://www.linkedin.com/in/james-geneser-01967a153/"
             >

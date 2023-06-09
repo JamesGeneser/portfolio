@@ -26,18 +26,18 @@ export default function Home() {
   }, []);
 
   gsap.to(".test", { x: 40, delay: 8 });
-  gsap.set(".scrollText", { autoAlpha: 0 });
-  gsap.to(".scrollText", {
-    scrollTrigger: ".scrollText",
+  gsap.set(".scroll", { autoAlpha: 0 });
+  gsap.to(".scroll", {
+    scrollTrigger: ".scroll",
     autoAlpha: 1,
     duration: 2,
   });
   return (
     <>
-      <Container className="homePage">
+      <Container className="p-4">
         <p className="d-none">git change</p>
         <Row>
-          <Col>
+          <Col className="align-bottom">
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -45,32 +45,32 @@ export default function Home() {
               src={require("../images/profile.jpg")}
             ></img>
           </Col>
-          <Col className="introTxt d-flex flex-column justify-content-center">
+          <Col className="introTxt d-flex flex-column align-top">
             <div className="developerTxt">
               <h2 className="title">Front-End Web Developer</h2>
               <h5 className="subTitle">
                 with a passion for human-centered design
               </h5>
             </div>
-            <Row>
-              <Col className="d-flex flex-row">
-                <img
-                  className="bootcampStamp"
-                  src={require("../images/universityDenverBootcamp.png")}
-                  alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
-                ></img>
-              </Col>
-              <Col>
-                <p className=" mt-2">Full Stack Flex Graduate</p>
-                <p className="">Community-Oriented Team Member</p>
-                <p className="">Passionate About Visual Engagement</p>
-              </Col>
-            </Row>
           </Col>
         </Row>
       </Container>
-      <Container className="homeExtra">
-        <Row className="scrollText">
+      <Container className="p-4 m-5">
+        <Row className="">
+          <Col className="scroll">
+            <p className="item">Full Stack Flex Graduate</p>
+            <p className="item">Community-Oriented Team Member</p>
+            <p className="item">Passionate About Visual Engagement</p>
+          </Col>
+          <Col className="scroll">
+            <img
+              className="bootcampStamp"
+              src={require("../images/universityDenverBootcamp.png")}
+              alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
+            ></img>
+          </Col>
+        </Row>
+        <Row className="scroll">
           <h3 className="title">Skills in</h3>
 
           <p>

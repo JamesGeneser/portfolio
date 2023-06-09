@@ -9,6 +9,8 @@
 
 
 
+
+
 .cardStack{
     display: flex;
     flex-direction: column;
@@ -35,7 +37,7 @@
 }
 
 .introTxt{
-    border: 2px white solid;
+    
     color:white;
     position:relative;
     top: 20vh;
@@ -43,15 +45,25 @@
     margin: 2vh;
 }
 .developerTxt{
+
     min-height: 30vh;
     font-family: 'Raleway ', sans-serif, !important;
-    padding: 2vh;
+    padding: 5vh;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-
+.bootcampStamp{
+    max-width: 80vh ;
+    max-height: 80vh
+    
+}
+.item{
+    color: white;
+    font-size: 40px;
+}
 
 
 .navElement{
@@ -74,19 +86,17 @@
 
 .title{
     font-family: 'Work Sans', sans-serif;
-font-size: 60px;
+font-size: 100px;
 font-weight: bold;
+padding: 4vh;
+text-align: end;
 }
 .subTitle{
  font-weight: 100;
     
 }
 
-.bootcampStamp{
-    max-width: 40vh ;
-    max-height: 40vh
-    
-}
+
 
 
 
@@ -112,12 +122,17 @@ font-weight: bold;
 }
 
 
-
+.portfolioTitle{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
 
 
 .portfolioTxt{
+    font-family: 'Work Sans', sans-serif;
     display: flex;
-    align-items: end;
+ 
     font-size: 20px;
     
 }
