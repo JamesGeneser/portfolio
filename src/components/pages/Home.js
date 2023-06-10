@@ -9,29 +9,41 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const comp = useRef();
-
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.set(".profileImg", { autoAlpha: 0 });
       gsap.set(".introTxt", { autoAlpha: 0 });
-      let tl = gsap.timeline({ delay: 1 });
+      let tl = gsap.timeline({
+        delay: 1,
+      });
 
       tl.to(".profileImg", { autoAlpha: 1, duration: 2 });
 
-      tl.to(".introTxt", { autoAlpha: 1, duration: 2 }, ">-0.5");
+      tl.to(".introTxt", { autoAlpha: 1, duration: 1 });
     });
 
     return () => ctx.revert();
   }, []);
 
-  gsap.to(".test", { x: 40, delay: 8 });
-  gsap.set(".scroll", { autoAlpha: 0 });
-  gsap.to(".scroll", {
-    scrollTrigger: ".scroll",
-    autoAlpha: 1,
-    duration: 2,
-  });
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.set(".scroll", { autoAlpha: 0 });
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          delay: 1,
+          trigger: ".scroll",
+          start: "top top",
+        },
+      });
+      tl.to(".scroll", { autoAlpha: 1, duration: 2 });
+      gsap.from(".skillItem", {
+        x: -500,
+        duration: 1.5,
+        ease: "elastic.out(1, 1)",
+      });
+    });
+  }, []);
+
   return (
     <>
       <Container className="p-4">
@@ -55,28 +67,45 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="p-4 m-5">
+      <Container className="p-4 m-5 mt-5">
         <Row className="">
-          <Col className="scroll">
-            <p className="item">Full Stack Flex Graduate</p>
-            <p className="item">Community-Oriented Team Member</p>
-            <p className="item">Passionate About Visual Engagement</p>
+          <Col className="scroll ">
+            <h3 className="aboutMe"> About Me </h3>
+            <ul className="mt-4 ">
+              <li className="item">
+                Full Stack Flex Graduate from the University of Denver
+              </li>
+              <li className="item">Community-Oriented Team Member</li>
+              <li className="item">Passionate About Visual Engagement</li>
+            </ul>
           </Col>
-          <Col className="scroll">
+          <Col className="scroll ms-5">
             <img
-              className="bootcampStamp"
+              className="bootcampStamp m-5"
               src={require("../images/universityDenverBootcamp.png")}
               alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
             ></img>
           </Col>
         </Row>
-        <Row className="scroll">
-          <h3 className="title">Skills in</h3>
+        <Row className="scroll mb-5">
+          <h3 className="skills">Skills in</h3>
 
-          <p>
-            Experience in: Javascript, React, GraphQl, MongoDB, MySQL, Express,
-            Node.js, RESTful APIs
-          </p>
+          {/* <p>
+            Javascript, React, GraphQl, MongoDB, MySQL, Express, Node.js,
+            RESTful APIs
+          </p> */}
+        </Row>
+        <Row className="scroll">
+          <div className="d-flex flex-row justify-content-between">
+            <p className="skillItem">Javascript</p>
+            <p className="skillItem">React</p>
+            <p className="skillItem">GraphQl</p>
+            <p className="skillItem">MongoDB</p>
+            <p className="skillItem">MySQL</p>
+            <p className="skillItem">Express</p>
+            <p className="skillItem">Node.js</p>
+            <p className="skillItem">RESTful APIs</p>
+          </div>
         </Row>
       </Container>
     </>
