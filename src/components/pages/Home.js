@@ -13,11 +13,9 @@ export default function Home() {
     let ctx = gsap.context(() => {
       gsap.set(".profileImg", { autoAlpha: 0 });
       gsap.set(".introTxt", { autoAlpha: 0 });
-      let tl = gsap.timeline({
-        delay: 1,
-      });
+      let tl = gsap.timeline({});
 
-      tl.to(".profileImg", { autoAlpha: 1, duration: 2 });
+      tl.to(".profileImg", { autoAlpha: 1, duration: 2, delay: 1 });
 
       tl.to(".introTxt", { autoAlpha: 1, duration: 1 });
     });
@@ -35,8 +33,8 @@ export default function Home() {
           start: "top top",
         },
       });
-      tl.to(".scroll", { autoAlpha: 1, duration: 2 });
-      gsap.from(".skillItem", {
+      tl.to(".scroll", { autoAlpha: 1, duration: 1 });
+      tl.from(".skillItem", {
         x: -500,
         duration: 1.5,
         ease: "elastic.out(1, 1)",
