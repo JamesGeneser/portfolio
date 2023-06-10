@@ -88,8 +88,8 @@
 }
 
 .skillItem{
-    color: white;
-    background-color: rgb(71, 82, 134);
+    color: rgb(71, 82, 134);
+    background-color: white;
     padding: 2vh;
     border-radius: 5%;
     min-width: 20vh;
