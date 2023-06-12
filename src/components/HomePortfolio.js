@@ -4,18 +4,22 @@ const HomePortfolio = () => {
   console.log(window.location.pathname);
   let location = window.location.pathname;
 
-  if (location === "/home") {
+  if (location === "/portfolio/") {
     return (
       <Nav>
-        <Nav.Link className="nav-item" name="/projects" href="/projects">
+        <Nav.Link
+          className="nav-item"
+          name="/projects"
+          href="/portfolio/projects"
+        >
           Portfolio
         </Nav.Link>
       </Nav>
     );
-  } else if (location === "/projects") {
+  } else if (location === "/portfolio/projects") {
     return (
       <Nav>
-        <Nav.Link className="nav-item" name="/home" href="/home">
+        <Nav.Link className="nav-item" name="/" href="/portfolio/">
           Home
         </Nav.Link>
       </Nav>
