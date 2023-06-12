@@ -1,7 +1,7 @@
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(158,191,212,1) 30%, rgba(66,132,179,1) 100%);
+   
+    background: rgb(120,200,191);
+    background: linear-gradient(0deg, rgba(120,200,191,1) 19%, rgba(0,147,233,1) 87%);
     background-repeat: no-repeat;
+  
 }

@@ -44,10 +44,9 @@ export default function Home() {
 
   return (
     <>
-      <Container className="p-4">
-        <p className="d-none">git change</p>
-        <Row>
-          <Col className="align-bottom">
+      <Container fluid>
+        <Row className="profile-intro">
+          <Col>
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -55,13 +54,11 @@ export default function Home() {
               src={require("../images/profile.jpg")}
             ></img>
           </Col>
-          <Col className="introTxt d-flex flex-column align-top">
-            <div className="developerTxt">
-              <h2 className="title">Front-End Web Developer</h2>
-              <h5 className="subTitle">
-                with a passion for human-centered design
-              </h5>
-            </div>
+          <Col className="introTxt d-flex flex-column ">
+            <h2 className="title">Front-End Web Developer</h2>
+            <h5 className="subTitle">
+              with a passion for human-centered design
+            </h5>
           </Col>
         </Row>
       </Container>

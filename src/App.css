@@ -1,13 +1,14 @@
 
   
-.body{
-    font-family: 'Raleway ', sans-serif;
-    color:white
-   
+
+
+
+.profile-intro{
+    display: flex;
+    flex-shrink: 2;
+    max-width: auto;
+    min-height: auto;
 }
-
-
-
 
 
 
@@ -30,6 +31,7 @@
 
 
 .profileImg{
+    flex-shrink: inherit;
     border-radius: 50%;
    position: relative;
    top: 10vh;
@@ -39,21 +41,9 @@
 .introTxt{
     
     color:white;
-    position:relative;
-    top: 20vh;
-    left:2vh;
-    margin: 2vh;
-}
-.developerTxt{
-
-    min-height: 30vh;
-    font-family: 'Raleway ', sans-serif, !important;
-    padding: 5vh;
   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
+
 
 .bootcampStamp{
     max-width: 80vh ;
@@ -96,15 +86,29 @@
     text-align: center;
 }
 
-.navElement{
-    color: white !important;
-    font-family: 'Raleway', sans-serif !important;
-   margin:5vh;
-   font-size: 15px !important;
+.navbar{
+ 
+
 }
 
-.navElement:hover{
+.nav-item{
+    color: white !important;
+    font-family: 'Raleway', sans-serif !important;
+    max-width: 30vh;
+    padding: 0 !important;
+    text-align: left !important;
+   margin:5vh;
+   font-size: 20px !important;
+}
+
+.nav-item:hover{
     transform: scale(1.4);
+
+}
+.navButtonCollapse{
+min-width: 20vh;
+min-height: 10vh;
+ 
 }
 
 
@@ -115,6 +119,7 @@
 
 
 .title{
+
     font-family: 'Work Sans', sans-serif;
 font-size: 100px;
 font-weight: bold;
@@ -191,3 +196,31 @@ text-align: end;
 }
 
 
+/* 
+@media only screen and (min-width: 780px) and (max-width:1200px) {
+   .title{
+    font-size: 80px ;
+   }
+   .profileImg{
+    max-width: 80vh;
+   }
+    
+} */
+@media all and (min-width: 780px) and (max-width: 1200px) {
+    .profileImg{
+        max-width: 80vh;
+    }
+    .title{
+        font-size: 80px ;
+       }
+}
+ @media  all and (min-width: 360px) and (max-width: 779px) {
+    .profileImg{
+        max-width: 70vh;
+    }
+    .title{
+        font-size: 40px ;
+       }
+       }
+     
+    

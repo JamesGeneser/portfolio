@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavbarToggle from "react-bootstrap/NavbarToggle";
 import { useEffect } from "react";
 
 function Navigation() {
@@ -19,34 +20,36 @@ function Navigation() {
   }, []);
 
   return (
-    <Navbar expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">
-          <img
-            alt="James Geneser logo, name within a box"
-            className="logo"
-            src={require("../components/images/profileLogo.png")}
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto d-flex justify-content-between">
-            <HomePortfolio as />
+    <Navbar expand="sm" className="m-4">
+      <Navbar.Brand>
+        <img
+          alt="James Geneser logo, name within a box"
+          className="logo"
+          src={require("../components/images/profileLogo.png")}
+        />
+      </Navbar.Brand>
+      <Navbar.Toggle
+        className="navButtonCollapse"
+        label="Toggle navigation"
+        aria-controls="basic-navbar-nav"
+      />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto my-2 my-lg-0">
+          <HomePortfolio />
 
-            <Nav.Link
-              className="nav-item navElement"
-              target="_blank"
-              href="https://www.linkedin.com/in/james-geneser-01967a153/"
-            >
-              LinkedIn
-            </Nav.Link>
+          <Nav.Link
+            className="nav-item navElement"
+            target="_blank"
+            href="https://www.linkedin.com/in/james-geneser-01967a153/"
+          >
+            LinkedIn
+          </Nav.Link>
 
-            <Resume />
+          <Resume />
 
-            <Contact />
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+          <Contact />
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
