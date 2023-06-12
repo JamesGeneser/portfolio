@@ -1,7 +1,17 @@
 body {
-   
+    width: 200vw;
     background: rgb(120,200,191);
     background: linear-gradient(0deg, rgba(120,200,191,1) 19%, rgba(0,147,233,1) 87%);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
   
 }
+
+@-ms-viewport{
+    width: device-width;
+  }
+
+  #root {
+ 
+    height: 100%;
+    width: 100%
+  }

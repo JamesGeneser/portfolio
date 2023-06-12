@@ -46,7 +46,7 @@ export default function Home() {
     <>
       <Container fluid>
         <Row className="profile-intro">
-          <Col>
+          <Col xs={1} lg={3}>
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -54,7 +54,7 @@ export default function Home() {
               src={require("../images/profile.jpg")}
             ></img>
           </Col>
-          <Col className="introTxt d-flex flex-column ">
+          <Col lg={3} className="introTxt p-4 d-flex flex-column ">
             <h2 className="title">Front-End Web Developer</h2>
             <h5 className="subTitle">
               with a passion for human-centered design
@@ -84,13 +84,8 @@ export default function Home() {
         </Row>
         <Row className="scroll mb-5">
           <h3 className="skills">Skills in</h3>
-
-          {/* <p>
-            Javascript, React, GraphQl, MongoDB, MySQL, Express, Node.js,
-            RESTful APIs
-          </p> */}
         </Row>
-        <Row className="scroll">
+        {/* <Row className="scroll">
           <div className="d-flex flex-row justify-content-between">
             <p className="skillItem">Javascript</p>
             <p className="skillItem">React</p>
@@ -101,7 +96,7 @@ export default function Home() {
             <p className="skillItem">Node.js</p>
             <p className="skillItem">RESTful APIs</p>
           </div>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );
