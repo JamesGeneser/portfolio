@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.8865cb6b.css",
-    "main.js": "/home/static/js/main.3abb47ad.js",
-    "static/media/birdNerd.png": "/home/static/media/birdNerd.94d06a9894751679a9cd.png",
-    "static/media/DiscoveringDenver.png": "/home/static/media/DiscoveringDenver.c3822ad8f84218f14094.png",
-    "static/media/profileLogo.png": "/home/static/media/profileLogo.de2bf0f204e8087ff9fa.png",
-    "static/media/Librarian.png": "/home/static/media/Librarian.7adaa9eb5c924921989a.png",
-    "static/media/Resume23Big.jpg": "/home/static/media/Resume23Big.112c624e9390a3186bc7.jpg",
-    "static/media/profile.jpg": "/home/static/media/profile.c93f8ae2076602c31487.jpg",
-    "static/media/universityDenverBootcamp.png": "/home/static/media/universityDenverBootcamp.7d4202799bc48a8a0a7d.png",
-    "index.html": "/home/index.html",
-    "main.8865cb6b.css.map": "/home/static/css/main.8865cb6b.css.map",
-    "main.3abb47ad.js.map": "/home/static/js/main.3abb47ad.js.map"
+    "main.css": "/portfolio/home/static/css/main.8865cb6b.css",
+    "main.js": "/portfolio/home/static/js/main.55f5afc6.js",
+    "static/media/birdNerd.png": "/portfolio/home/static/media/birdNerd.94d06a9894751679a9cd.png",
+    "static/media/DiscoveringDenver.png": "/portfolio/home/static/media/DiscoveringDenver.c3822ad8f84218f14094.png",
+    "static/media/profileLogo.png": "/portfolio/home/static/media/profileLogo.de2bf0f204e8087ff9fa.png",
+    "static/media/Librarian.png": "/portfolio/home/static/media/Librarian.7adaa9eb5c924921989a.png",
+    "static/media/Resume23Big.jpg": "/portfolio/home/static/media/Resume23Big.112c624e9390a3186bc7.jpg",
+    "static/media/profile.jpg": "/portfolio/home/static/media/profile.c93f8ae2076602c31487.jpg",
+    "static/media/universityDenverBootcamp.png": "/portfolio/home/static/media/universityDenverBootcamp.7d4202799bc48a8a0a7d.png",
+    "index.html": "/portfolio/home/index.html",
+    "main.8865cb6b.css.map": "/portfolio/home/static/css/main.8865cb6b.css.map",
+    "main.55f5afc6.js.map": "/portfolio/home/static/js/main.55f5afc6.js.map"
   },
   "entrypoints": [
     "static/css/main.8865cb6b.css",
-    "static/js/main.3abb47ad.js"
+    "static/js/main.55f5afc6.js"
   ]
 }
