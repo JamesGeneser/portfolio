@@ -12,7 +12,7 @@ import { useEffect } from "react";
 
 function Navigation() {
   useEffect(() => {
-    gsap.from(".navElement", {
+    gsap.from(".nav-item", {
       x: -500,
       duration: 1.5,
       ease: "elastic.out(1, 1)",
@@ -38,7 +38,7 @@ function Navigation() {
           <HomePortfolio />
 
           <Nav.Link
-            className="nav-item navElement"
+            className="nav-item"
             target="_blank"
             href="https://www.linkedin.com/in/james-geneser-01967a153/"
           >
