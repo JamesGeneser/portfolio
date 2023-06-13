@@ -6,6 +6,8 @@ import Col from "react-bootstrap/Col";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { auto } from "@popperjs/core";
+import { textAlign } from "@mui/system";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -46,7 +48,7 @@ export default function Home() {
     <>
       <Container fluid>
         <Row className="">
-          <Col sm={2} md={4}>
+          <Col sm={auto} md={2}>
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -54,9 +56,9 @@ export default function Home() {
               src={require("../images/profile.jpg")}
             ></img>
           </Col>
-          <Col sm={4} md={6} className="introTxt p-4 d-flex flex-column ">
+          <Col sm={auto} md={10} className="introTxt p-4 d-flex flex-column ">
             <h2 className="title">Front-End Web Developer</h2>
-            <h5 className="subTitle">
+            <h5 className="subTitle ">
               with a passion for human-centered design
             </h5>
           </Col>
