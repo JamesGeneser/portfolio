@@ -50,7 +50,7 @@ export default function Home() {
     <>
       <Container fluid>
         <Row className="">
-          <Col sm={auto} md={2}>
+          <Col xs={auto} sm={auto} md={2}>
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -66,7 +66,7 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="p-4 m-5 mt-5">
+      <Container className="p-4 mt-5">
         <Row className="">
           <Col className="scroll ">
             <h3 className="aboutMe"> About Me </h3>
@@ -74,7 +74,7 @@ export default function Home() {
               <li className="item">
                 Full Stack Flex Graduate from the University of Denver
               </li>
-              <li className="item">Community-Oriented Team Member</li>
+              <li className="item">Community-Oriented Web Developer</li>
               <li className="item">Passionate About Visual Engagement</li>
             </ul>
           </Col>
@@ -89,17 +89,31 @@ export default function Home() {
         <Row className="mb-5">
           <h3 className="skill-title">Skills in</h3>
         </Row>
-        <Row className="skills">
-          <div className="d-flex flex-row justify-content-between">
-            <p className="skillItem">Javascript</p>
-            <p className="skillItem">React</p>
-            <p className="skillItem">GraphQl</p>
-            <p className="skillItem">MongoDB</p>
-            <p className="skillItem">MySQL</p>
-            <p className="skillItem">Express</p>
-            <p className="skillItem">Node.js</p>
-            <p className="skillItem">RESTful APIs</p>
-          </div>
+        <Row className="skills d-flex flex-row justify-content-between">
+          <Col sm={2} md={1} lg={1} className="skillItem">
+            Javascript
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            React
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            GraphQL
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            MongoDB
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            MySQL
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            Express
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            Node.js
+          </Col>
+          <Col sm={4} md={1} lg={1} className="skillItem">
+            RESTful APIs
+          </Col>
         </Row>
       </Container>
     </>

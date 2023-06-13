@@ -1,18 +1,19 @@
+
+
 body {
+
+
+    margin: 0vw;
     color: white;
-  
-    background: rgb(120,200,191);
+    border: 5px solid red;
+    /* background: rgb(120,200,191); */
     background: linear-gradient(0deg, rgba(120,200,191,1) 19%, rgba(0,147,233,1) 87%);
     /* background-repeat: no-repeat; */
   
 }
 
-@-ms-viewport{
+/* @-ms-viewport{
     width: device-width;
-  }
+  } */
 
-  #root {
- 
-    height: 100%;
-    width: 100%
-  }
+  
