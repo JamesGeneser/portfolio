@@ -79,16 +79,17 @@ text-align: right;
     border: 2px solid white;
 }
 
-.skills{
-    color:rgb(71, 82, 134);
+.skill-title{
+color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 50px;
     font-weight: bolder;
 }
 
 .skillItem{
-    color: rgb(71, 82, 134);
-    background-color: white;
+    color: white;
+    border: 2px solid white;
+    margin: 2vw;
     padding: 2vh;
     border-radius: 5%;
     /* min-width: 20vh; */

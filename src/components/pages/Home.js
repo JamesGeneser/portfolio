@@ -17,7 +17,7 @@ export default function Home() {
       gsap.set(".introTxt", { autoAlpha: 0 });
       let tl = gsap.timeline({});
 
-      tl.to(".profileImg", { autoAlpha: 1, duration: 2, delay: 1 });
+      tl.to(".profileImg", { autoAlpha: 1, duration: 1, delay: 0.5 });
 
       tl.to(".introTxt", { autoAlpha: 1, duration: 1 });
     });
@@ -28,6 +28,7 @@ export default function Home() {
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.set(".scroll", { autoAlpha: 0 });
+      gsap.set(".skill", { autoAlpha: 0 });
       let tl = gsap.timeline({
         scrollTrigger: {
           delay: 1,
@@ -36,6 +37,7 @@ export default function Home() {
         },
       });
       tl.to(".scroll", { autoAlpha: 1, duration: 1 });
+      tl.to(".skill", { autoAlpha: 1, duration: 1 });
       tl.from(".skillItem", {
         x: -500,
         duration: 1.5,
@@ -84,10 +86,10 @@ export default function Home() {
             ></img>
           </Col>
         </Row>
-        <Row className="scroll mb-5">
-          <h3 className="skills">Skills in</h3>
+        <Row className="mb-5">
+          <h3 className="skill-title">Skills in</h3>
         </Row>
-        {/* <Row className="scroll">
+        <Row className="skills">
           <div className="d-flex flex-row justify-content-between">
             <p className="skillItem">Javascript</p>
             <p className="skillItem">React</p>
@@ -98,7 +100,7 @@ export default function Home() {
             <p className="skillItem">Node.js</p>
             <p className="skillItem">RESTful APIs</p>
           </div>
-        </Row> */}
+        </Row>
       </Container>
     </>
   );
