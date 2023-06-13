@@ -45,8 +45,8 @@ export default function Home() {
   return (
     <>
       <Container fluid>
-        <Row className="profile-intro">
-          <Col xs={1} lg={3}>
+        <Row className="">
+          <Col sm={2} md={4}>
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -54,7 +54,7 @@ export default function Home() {
               src={require("../images/profile.jpg")}
             ></img>
           </Col>
-          <Col lg={3} className="introTxt p-4 d-flex flex-column ">
+          <Col sm={4} md={6} className="introTxt p-4 d-flex flex-column ">
             <h2 className="title">Front-End Web Developer</h2>
             <h5 className="subTitle">
               with a passion for human-centered design

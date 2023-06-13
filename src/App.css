@@ -19,7 +19,10 @@
     max-height: 100px; 
 }
 
-
+/* .profile-intro{
+    width: 100%;
+    flex-direction: row;
+} */
 
 .profileImg{
 
@@ -29,11 +32,26 @@
    margin:2vh
 }
 
-.introTxt{
-    
-    color:white;
-  
+/* .profile-image-col{
+    max-width: 10vh;
+} */
+
+.title{
+
+    font-family: 'Work Sans', sans-serif;
+font-size: 100px;
+font-weight: bold;
+padding: 4vh;
+text-align: right;
 }
+.subTitle{
+ font-weight: 100;
+    
+}
+
+
+
+
 
 
 .bootcampStamp{
@@ -109,19 +127,6 @@ min-height: 10vh;
 
 
 
-.title{
-
-    font-family: 'Work Sans', sans-serif;
-font-size: 100px;
-font-weight: bold;
-padding: 4vh;
-text-align: end;
-}
-.subTitle{
- font-weight: 100;
-    
-}
-
 
 
 
@@ -139,10 +144,10 @@ text-align: end;
 .modalButton{
     color: rgba(0,0,0,0.55);
 }
-/* 
+
 .resume{
     max-width: 100%;
-} */
+}
 
 
 
@@ -164,27 +169,21 @@ text-align: end;
 
 .portfolioCard{
     font-family: 'Raleway';
-    /* width: 80%; */
+    width: 80%;
     color: white;
     margin: 2%;
     
 }
 
 .portfolioImg{
-    /* width: 100%; */
+    width: 100%;
 }
 .portfolioImg:hover{
     transform: scale(1.02);
 }
 
 
-.icon{
-    /* max-width: 18%; */
-}
 
-.iconContainer{
-    /* max-width: 20%; */
-}
 
 
 /* 
@@ -197,7 +196,7 @@ text-align: end;
    }
     
 } */
-/* @media all and (min-width: 780px) and (max-width: 1200px) {
+ /* @media all and (min-width: 780px) and (max-width: 1200px) {
     .profileImg{
         max-width: 80vh;
     }
@@ -206,12 +205,19 @@ text-align: end;
        }
 }
  @media  all and (min-width: 360px) and (max-width: 779px) {
+    .logo{
+        max-height: 200px; 
+    }
     .profileImg{
-        max-width: 60vh;
+        max-width: 30vh;
     }
     .title{
-        font-size: 60px ;
+        font-size: 30px ;
        }
+    .subTitle{
+        font-size: 10px;
+        text-align: right;
+    }
        }
        @media  all and (max-width: 359px) {
         .profileImg{
@@ -220,7 +226,7 @@ text-align: end;
         .title{
             font-size: 60px ;
            }
-           }
+           } */
 
      
-     */
+
