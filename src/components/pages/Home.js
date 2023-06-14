@@ -27,8 +27,8 @@ export default function Home() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.set(".scroll", { autoAlpha: 0 });
-      gsap.set(".skill", { autoAlpha: 0 });
+      // gsap.set(".scroll", { autoAlpha: 0 });
+      // gsap.set(".skill", { autoAlpha: 0 });
       let tl = gsap.timeline({
         scrollTrigger: {
           delay: 1,
@@ -36,14 +36,16 @@ export default function Home() {
           start: "top top",
         },
       });
-      tl.to(".scroll", { autoAlpha: 1, duration: 1 });
-      tl.to(".skill", { autoAlpha: 1, duration: 1 });
-      tl.from(".skillItem", {
-        x: -500,
-        duration: 1.5,
-        ease: "elastic.out(1, 1)",
-      });
+      // tl.to(".scroll", { autoAlpha: 1, duration: 1 });
+      // tl.to(".skill", { autoAlpha: 1, duration: 1 });
+      // tl.from(".skillItem", {
+      //   x: -500,
+      //   duration: 1.5,
+      //   ease: "elastic.out(1, 1)",
+      // });
     });
+
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -66,52 +68,48 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="p-4 mt-5">
-        <Row className="">
-          <Col className="scroll ">
-            <h3 className="aboutMe"> About Me </h3>
-            <ul className="mt-4 ">
-              <li className="item">
-                Full Stack Flex Graduate from the University of Denver
-              </li>
-              <li className="item">Community-Oriented Web Developer</li>
-              <li className="item">Passionate About Visual Engagement</li>
-            </ul>
-          </Col>
-          <Col className="scroll ms-5">
+      <Container className="">
+        <Row className="scroll">
+          <Col xs={7} sm={2} md={4} className="scroll ms-5">
             <img
-              className="bootcampStamp m-5"
+              className="bootcampStamp "
               src={require("../images/universityDenverBootcamp.png")}
               alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
             ></img>
           </Col>
+          <Col xs={10} className="scroll m-2">
+            <p className="item">
+              Full Stack Flex Graduate from the University of Denver
+            </p>
+          </Col>
         </Row>
-        <Row className="mb-5">
-          <h3 className="skill-title">Skills in</h3>
+
+        <Row className="mt-5">
+          <h3 className="skill-title">Skills</h3>
         </Row>
-        <Row className="skills d-flex flex-row justify-content-between">
-          <Col sm={2} md={1} lg={1} className="skillItem">
+        <Row className="skills d-flex flex-row justify-content-between m-2">
+          <Col xs={4} sm={2} md={1} lg={1} className="skillItem">
             Javascript
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             React
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             GraphQL
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             MongoDB
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             MySQL
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             Express
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             Node.js
           </Col>
-          <Col sm={4} md={1} lg={1} className="skillItem">
+          <Col xs={4} sm={4} md={1} lg={1} className="skillItem">
             RESTful APIs
           </Col>
         </Row>

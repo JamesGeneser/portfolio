@@ -20,7 +20,7 @@ function Navigation() {
   }, []);
 
   return (
-    <Navbar expand="sm" className="m-4">
+    <Navbar expand="md" className="m-4">
       <Navbar.Brand>
         <img
           alt="James Geneser logo, name within a box"

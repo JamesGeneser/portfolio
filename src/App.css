@@ -55,8 +55,9 @@ text-align: right;
 
 
 .bootcampStamp{
-    max-width: 20vh ;
-    max-height: 20vh;
+    max-width:100%;
+    /* max-width: 20vh ;
+    max-height: 20vh; */
 
     
 }
@@ -89,7 +90,7 @@ color: white;
 .skillItem{
     color: white;
     border: 2px solid white;
-
+    margin: 1vh;
     padding: 2vh;
     border-radius: 5%;
 
