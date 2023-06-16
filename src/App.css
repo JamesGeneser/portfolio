@@ -253,7 +253,7 @@ min-height: 10vh;
         padding: 2vh;
     }
     .carousel-title{
-        font-size: 20px;
+        font-size: 24px;
     }
        }
        @media  all and (max-width: 359px) {
@@ -275,7 +275,7 @@ min-height: 10vh;
             font-size: 12px ;
         }
         .carousel-title{
-            font-size: 20px;
+            font-size: 24px;
         }
            } 
 

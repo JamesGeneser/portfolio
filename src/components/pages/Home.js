@@ -21,34 +21,32 @@ export default function Home() {
     let ctx = gsap.context(() => {
       gsap.set(".profileImg", { autoAlpha: 0 });
       gsap.set(".introTxt", { autoAlpha: 0 });
-      let tl = gsap.timeline({});
+      gsap.set(".scroll", { autoAlpha: 0 });
+      gsap.set(".skill-title", { autoAlpha: 0 });
+      gsap.set(".carousel", { autoAlpha: 0 });
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          delay: 5,
+          trigger: ".scroll",
+          start: "top center",
+        },
+      });
 
       tl.to(".profileImg", { autoAlpha: 1, duration: 1, delay: 0.5 });
 
       tl.to(".introTxt", { autoAlpha: 1, duration: 1 });
-    });
 
-    return () => ctx.revert();
-  }, []);
-
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      // gsap.set(".scroll", { autoAlpha: 0 });
-      // gsap.set(".skill", { autoAlpha: 0 });
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          delay: 1,
-          trigger: ".scroll",
-          start: "top top",
-        },
+      tl.to(".scroll", { autoAlpha: 1, duration: 1 });
+      tl.to(".skill-title", { autoAlpha: 1, duration: 1 });
+      tl.from(".skillItem", {
+        x: -500,
+        duration: 1.5,
+        ease: "elastic.out(1, 1)",
       });
-      // tl.to(".scroll", { autoAlpha: 1, duration: 1 });
-      // tl.to(".skill", { autoAlpha: 1, duration: 1 });
-      // tl.from(".skillItem", {
-      //   x: -500,
-      //   duration: 1.5,
-      //   ease: "elastic.out(1, 1)",
-      // });
+      // tl.to(".carousel", { autoAlpha: 1, duration: 1, delay: 1 });
+      tl.to(".carousel", { y: 500 });
+      tl.to(".carousel", { autoAlpha: 1, duration: 1 });
+      tl.to(".carousel", { y: 0, duration: 1 });
     });
 
     return () => ctx.revert();
@@ -80,8 +78,8 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Row className="d-block d-sm-none">
-        <Col xs={5}>
+      <Row className="d-block d-sm-none scroll d-flex justify-content-center">
+        <Col xs={7}>
           <img
             className="bootcampStamp"
             src={require("../images/universityDenverBootcamp.png")}
@@ -105,8 +103,8 @@ export default function Home() {
           </Col>
         </Row>
 
-        <Row className="mt-5">
-          <h3 className="skill-title">Skilled In</h3>
+        <Row className="m-2">
+          <h3 className="skill-title ">Skilled In</h3>
         </Row>
         <Row className="skills d-flex flex-row justify-content-around m-2">
           <Col xs={4} sm={2} md={1} lg={2} className="skillItem">
@@ -124,8 +122,8 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className="mt-5">
-        <Row>
+      <Container className="mt-5 carousel">
+        <Row className="m-2">
           <h4 className="carousel-title">See My Portfolio</h4>
         </Row>
         <Row>
