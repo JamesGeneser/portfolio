@@ -58,7 +58,7 @@ export default function Home() {
     <>
       <Container fluid>
         <Row className="">
-          <Col xs={auto} sm={auto} md={2} lg={6}>
+          <Col xs={6} sm={5} md={6} lg={6}>
             <img
               alt="profile of James Geneser wearing a blue shirt and tie"
               className="profileImg"
@@ -67,8 +67,9 @@ export default function Home() {
             ></img>
           </Col>
           <Col
-            sm={auto}
-            md={10}
+            xs={4}
+            sm={4}
+            md={4}
             lg={6}
             className="introTxt p-4 d-flex flex-column "
           >
@@ -79,16 +80,25 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="">
-        <Row className="scroll border m-4">
-          <Col xs={5} sm={2} md={4} lg={4} className="scroll p-2">
+      <Row className="d-block d-sm-none">
+        <Col xs={5}>
+          <img
+            className="bootcampStamp"
+            src={require("../images/universityDenverBootcamp.png")}
+            alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
+          ></img>
+        </Col>
+      </Row>
+      <Container className="d-md-block">
+        <Row className="scroll d-none d-sm-none border m-4">
+          <Col xs={5} sm={7} md={4} lg={4} className="scroll p-2">
             <img
               className="bootcampStamp "
               src={require("../images/universityDenverBootcamp.png")}
               alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
             ></img>
           </Col>
-          <Col xs={5} lg={6} className="scroll m-2">
+          <Col xs={5} sm={10} md={7} lg={6} className="scroll m-2">
             <p className="item">
               Full Stack Flex Graduate from the University of Denver
             </p>
@@ -114,9 +124,9 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container>
+      <Container className="mt-5">
         <Row>
-          <h4>See My Portfolio</h4>
+          <h4 className="carousel-title">See My Portfolio</h4>
         </Row>
         <Row>
           <Carousel activeIndex={index} onSelect={handleSelect}>
