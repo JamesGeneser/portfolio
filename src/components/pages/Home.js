@@ -10,6 +10,7 @@ import { auto } from "@popperjs/core";
 import { textAlign } from "@mui/system";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import { Card } from "react-bootstrap";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -40,7 +41,7 @@ export default function Home() {
       tl.to(".scroll", { autoAlpha: 1, duration: 1 });
       tl.to(".skill-title", { autoAlpha: 1, duration: 1 });
       tl.from(".skillItem", {
-        x: -1000,
+        x: -2000,
         duration: 1.5,
         ease: "elastic.out(1, 1)",
       });
@@ -125,9 +126,11 @@ export default function Home() {
 
       <Container className="mt-5 carousel">
         <Row className="m-2">
-          <Link href="/portfolio/projects">
-            <h4 className="carousel-title">See My Portfolio</h4>
-          </Link>
+          <Card className="card">
+            <Card.Link href="/portfolio/projects" className="stretched-link">
+              <h4 className="carousel-title">See My Portfolio</h4>
+            </Card.Link>
+          </Card>
         </Row>
 
         <Row>
