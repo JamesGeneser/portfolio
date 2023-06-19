@@ -157,8 +157,13 @@ min-height: 10vh;
 
 .carousel-title{
     font-size: 40px;
-}
+    color: white;
+    text-decoration: none;
 
+}
+:link{
+    text-decoration: white;
+}
 
 
 .portfolioTitle{
@@ -171,7 +176,7 @@ min-height: 10vh;
 .portfolioTxt{
     font-family: 'Work Sans', sans-serif;
     display: flex;
- 
+    font-weight: 100;
     font-size: 20px;
     
 }
@@ -179,7 +184,7 @@ min-height: 10vh;
 
 .portfolioCard{
     font-family: 'Raleway';
-    width: 80%;
+
     color: white;
     margin: 2%;
     
@@ -187,6 +192,7 @@ min-height: 10vh;
 
 .portfolioImg{
     width: 100%;
+    max-height: 500px;
 }
 .portfolioImg:hover{
     transform: scale(1.02);

@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/all";
 import { auto } from "@popperjs/core";
 import { textAlign } from "@mui/system";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
       tl.to(".scroll", { autoAlpha: 1, duration: 1 });
       tl.to(".skill-title", { autoAlpha: 1, duration: 1 });
       tl.from(".skillItem", {
-        x: -500,
+        x: -1000,
         duration: 1.5,
         ease: "elastic.out(1, 1)",
       });
@@ -107,16 +108,16 @@ export default function Home() {
           <h3 className="skill-title ">Skilled In</h3>
         </Row>
         <Row className="skills d-flex flex-row justify-content-around m-2">
-          <Col xs={4} sm={2} md={1} lg={2} className="skillItem">
+          <Col xs={4} sm={2} md={2} lg={2} className="skillItem">
             Javascript
           </Col>
-          <Col xs={4} sm={4} md={1} lg={2} className="skillItem">
+          <Col xs={4} sm={4} md={2} lg={2} className="skillItem">
             React
           </Col>
-          <Col xs={4} sm={4} md={1} lg={2} className="skillItem">
+          <Col xs={4} sm={4} md={2} lg={2} className="skillItem">
             GraphQL
           </Col>
-          <Col xs={4} sm={4} md={1} lg={2} className="skillItem">
+          <Col xs={4} sm={4} md={2} lg={2} className="skillItem">
             GSAP library
           </Col>
         </Row>
@@ -124,8 +125,11 @@ export default function Home() {
 
       <Container className="mt-5 carousel">
         <Row className="m-2">
-          <h4 className="carousel-title">See My Portfolio</h4>
+          <Link href="/portfolio/projects">
+            <h4 className="carousel-title">See My Portfolio</h4>
+          </Link>
         </Row>
+
         <Row>
           <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>

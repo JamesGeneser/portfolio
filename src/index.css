@@ -5,7 +5,7 @@ body {
 
     margin: 0vw;
     color: white;
-
+    height: 2000px;
     /* background: rgb(120,200,191); */
     background: linear-gradient(0deg, rgba(120,200,191,1) 19%, rgba(0,147,233,1) 87%);
     /* background-repeat: no-repeat; */
