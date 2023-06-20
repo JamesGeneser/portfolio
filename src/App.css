@@ -153,12 +153,16 @@ min-height: 10vh;
 .resume{
     max-width: 100%;
 }
+.carousel{
 
+}
 
 .carousel-title{
     font-size: 40px;
-    color: white;
+    font-weight: bold;
+    color: rgb(0,147,233,1);
     text-decoration: none;
+    text-align: left;
 
 }
 :link{

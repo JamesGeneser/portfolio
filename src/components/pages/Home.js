@@ -125,13 +125,13 @@ export default function Home() {
       </Container>
 
       <Container className="mt-5 carousel">
-        <Row className="m-2">
-          <Card className="card">
+        <Card className="card mb-4">
+          <Row className="m-2">
             <Card.Link href="/portfolio/projects" className="stretched-link">
               <h4 className="carousel-title">See My Portfolio</h4>
             </Card.Link>
-          </Card>
-        </Row>
+          </Row>
+        </Card>
 
         <Row>
           <Carousel activeIndex={index} onSelect={handleSelect}>
