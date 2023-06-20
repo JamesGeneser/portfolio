@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
+import { auto } from "@popperjs/core";
 
 function Project() {
   const [index, setIndex] = useState(0);
@@ -17,7 +18,7 @@ function Project() {
       <Container className="cardStack">
         <Row className="portfolioCard">
           <h2 className="portfolioTitle">Discovering Denver</h2>
-          <Col lg={8}>
+          <Col xs={auto} lg={8}>
             <Link target="_blank" to="https://pure-refuge-38397.herokuapp.com/">
               <img
                 alt="Discovering Denver homepage"
@@ -26,9 +27,9 @@ function Project() {
               ></img>
             </Link>
           </Col>
-          <Col xs={2} lg={4} className="portfolioTxt">
+          <Col xs={10} sm={4} lg={4} className="portfolioTxt">
             Explore a variety of activities around Denver. Read and write
-            reviews and ratings!
+            reviews and ratings.
           </Col>
         </Row>
 
@@ -43,7 +44,7 @@ function Project() {
               ></img>
             </Link>
           </Col>
-          <Col xs={2} lg={4} className="portfolioTxt">
+          <Col xs={10} lg={4} className="portfolioTxt">
             Learn about the many birds that live in Colorado. Use the BirdNerd
             ID tool to identify birds by description, then post your sighting on
             the feed.
@@ -63,7 +64,7 @@ function Project() {
               ></img>
             </Link>
           </Col>
-          <Col xs={2} lg={4} className="portfolioTxt">
+          <Col xs={10} lg={4} className="portfolioTxt">
             Search for book results from the Google Books Api in a visually
             engaging manner.
           </Col>

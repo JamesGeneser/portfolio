@@ -190,13 +190,14 @@ min-height: 10vh;
     font-family: 'Raleway';
 
     color: white;
-    margin: 2%;
+    margin: 6vh;
     
 }
 
 .portfolioImg{
     width: 100%;
     max-height: 500px;
+    margin-bottom: 2vh;
 }
 .portfolioImg:hover{
     transform: scale(1.02);
@@ -265,6 +266,9 @@ min-height: 10vh;
     .carousel-title{
         font-size: 24px;
     }
+    .portfolioTxt{
+        font-size: 16px;
+    }
        }
        @media  all and (max-width: 359px) {
         /* .profileImg{
@@ -286,6 +290,9 @@ min-height: 10vh;
         }
         .carousel-title{
             font-size: 24px;
+        }
+        .portfolioTxt{
+            font-size: 18px;
         }
            } 
 

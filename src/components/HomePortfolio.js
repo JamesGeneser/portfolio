@@ -7,11 +7,7 @@ const HomePortfolio = () => {
   if (location === "/portfolio/") {
     return (
       <Nav>
-        <Nav.Link
-          className="nav-item"
-          name="/projects"
-          href="/portfolio/projects"
-        >
+        <Nav.Link className="nav-item" name="/projects" to="/projects">
           Portfolio
         </Nav.Link>
       </Nav>
@@ -19,7 +15,7 @@ const HomePortfolio = () => {
   } else if (location === "/portfolio/projects") {
     return (
       <Nav>
-        <Nav.Link className="nav-item" name="/" href="/portfolio/">
+        <Nav.Link className="nav-item" name="/" to="/">
           Home
         </Nav.Link>
       </Nav>
