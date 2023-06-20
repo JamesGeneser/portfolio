@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="font-mono">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navigation />
 
         <Routes>
