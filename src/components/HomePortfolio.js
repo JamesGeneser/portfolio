@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
+
 const HomePortfolio = () => {
   console.log(window.location.pathname);
   let location = window.location.pathname;
@@ -7,7 +8,7 @@ const HomePortfolio = () => {
   if (location === "/portfolio/") {
     return (
       <Nav>
-        <Nav.Link className="nav-item" name="/projects" to="/projects">
+        <Nav.Link className="nav-item" href="/portfolio/projects">
           Portfolio
         </Nav.Link>
       </Nav>
@@ -15,7 +16,8 @@ const HomePortfolio = () => {
   } else if (location === "/portfolio/projects") {
     return (
       <Nav>
-        <Nav.Link className="nav-item" name="/" to="/">
+        {" "}
+        <Nav.Link className="nav-item" href="/portfolio/">
           Home
         </Nav.Link>
       </Nav>

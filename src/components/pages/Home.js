@@ -67,7 +67,7 @@ export default function Home() {
             ></img>
           </Col>
           <Col
-            xs={4}
+            xs={6}
             sm={4}
             md={4}
             lg={6}
@@ -126,7 +126,7 @@ export default function Home() {
 
       <Container className="mt-5 carousel">
         <Card className="card mb-4">
-          <Row className="m-2">
+          <Row className="m-1">
             <Card.Link href="/portfolio/projects" className="stretched-link">
               <h4 className="carousel-title">See My Portfolio</h4>
             </Card.Link>
