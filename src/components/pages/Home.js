@@ -1,4 +1,4 @@
-import { React, useEffect, useState, useLayoutEffect, useRef } from "react";
+import { React, useState, useLayoutEffect } from "react";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -6,10 +6,9 @@ import Col from "react-bootstrap/Col";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { auto } from "@popperjs/core";
-import { textAlign } from "@mui/system";
+
 import Carousel from "react-bootstrap/Carousel";
-import { Link } from "react-router-dom";
+
 import { Card } from "react-bootstrap";
 gsap.registerPlugin(ScrollTrigger);
 
