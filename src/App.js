@@ -22,7 +22,7 @@ const App = () => {
         <Navigation />
 
         <div>
-          <Route exact path="/" component={<Home />} />
+          <Route exact path="/portfolio/" component={<Home />} />
           <Route path="/portfolio/projects" element={<Project />} />
         </div>
       </HashRouter>
