@@ -4,24 +4,30 @@ import { Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Project from "./components/pages/Project";
 import Home from "./components/pages/Home";
+import { HashRouter } from "react-router-dom";
 
 import "./App.css";
-
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+// const router = createHashRouter([{
+//   path: "/*",
+//   element: <App />
+// }])
+
+const App = () => {
   return (
     <div className="font-mono">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Navigation />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Project />} />
-        </Routes>
-      </BrowserRouter>
+        <div>
+          <Route exact path="/" component={<Home />} />
+          <Route path="/portfolio/projects" element={<Project />} />
+        </div>
+      </HashRouter>
     </div>
   );
-}
+};
 
 export default App;
