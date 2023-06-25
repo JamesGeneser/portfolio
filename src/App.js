@@ -3,7 +3,7 @@ import React from "react";
 import Navigation from "./components/Navigation";
 import Project from "./components/pages/Project";
 import Home from "./components/pages/Home";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import { createHashRouter, RouterProvider } from "react-router-dom";
@@ -17,14 +17,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const App = () => {
   return (
     <div className="font-mono">
-      <HashRouter basename="/">
-        <Navigation />
-
-        <div>
-          <Route exact path="/portfolio/" component={<Home />} />
-          <Route path="/portfolio/projects" element={<Project />} />
-        </div>
-      </HashRouter>
+      <Navigation />
+      <Home />
     </div>
   );
 };
