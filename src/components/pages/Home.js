@@ -79,30 +79,33 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-      <Row className="d-block d-sm-none scroll d-flex justify-content-center">
-        <Col xs={7}>
+      <Row className="d-flex justify-content-end me-3">
+        <Col xs={7} s={5} md={6}>
           <img
             className="bootcampStamp"
             src={require("../images/universityDenverBootcamp.png")}
             alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
           ></img>
+          <p className="stamp-subtitle me-2">
+            Graduate of the University of Denver's Fullstack Flex Bootcamp
+          </p>
         </Col>
       </Row>
-      <Container className="d-md-block">
-        <Row className="scroll d-none d-sm-none border m-4">
-          <Col xs={5} sm={7} md={4} lg={4} className="scroll p-2">
+      <Container className="">
+        {/* <Row className="scroll d-none d-sm-none d-md-block border m-4">
+          <Col xs={5} sm={7} md={4} lg={4} className="scroll m-0">
             <img
-              className="bootcampStamp "
+              className="bootcampStamp"
               src={require("../images/universityDenverBootcamp.png")}
               alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
             ></img>
           </Col>
-          <Col xs={5} sm={10} md={7} lg={6} className="scroll m-2">
+          <Col xs={5} sm={10} md={7} lg={4} className="scroll m-0">
             <p className="item">
               Full Stack Flex Graduate from the University of Denver
             </p>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row className="m-2">
           <h3 className="skill-title ">Skilled In</h3>
@@ -124,13 +127,9 @@ export default function Home() {
       </Container>
 
       <Container className="mt-5 carousel">
-        <Card className="card mb-4">
-          <Row className="m-1">
-            <Card.Link href="/portfolio/projects" className="stretched-link">
-              <h4 className="carousel-title">See My Portfolio</h4>
-            </Card.Link>
-          </Row>
-        </Card>
+        <Row className="m-1">
+          <h4 className="carousel-title">See My Portfolio</h4>
+        </Row>
 
         <Row>
           <Carousel activeIndex={index} onSelect={handleSelect}>

@@ -62,6 +62,11 @@ text-align: right;
 
     
 }
+.stamp-subtitle{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    text-align: right;
+}
 
 .aboutMe{
     font-family: 'Work Sans', sans-serif;
@@ -153,14 +158,12 @@ min-height: 10vh;
 .resume{
     max-width: 100%;
 }
-.carousel{
 
-}
 
 .carousel-title{
     font-size: 40px;
     font-weight: bold;
-    color: rgb(0,147,233,1);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: left;
 
@@ -230,6 +233,7 @@ min-height: 10vh;
     
         padding: 2vh;
     }
+    
     .item{
         font-size: 40px;
     }
