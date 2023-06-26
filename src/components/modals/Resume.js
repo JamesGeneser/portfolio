@@ -14,9 +14,9 @@ function Contact() {
         Resume
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal size="lg" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title className="modalTitle">My Resume</Modal.Title>
+          <Modal.Title className="modal-title">My Resume</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img

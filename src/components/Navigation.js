@@ -35,14 +35,21 @@ function Navigation() {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto my-2 my-lg-0">
-          <HomePortfolio />
-
+          {/* <HomePortfolio /> */}
+          <Nav.Link className="nav-item">Portfolio</Nav.Link>
           <Nav.Link
             className="nav-item"
             target="_blank"
             href="https://www.linkedin.com/in/james-geneser-01967a153/"
           >
             LinkedIn
+          </Nav.Link>
+          <Nav.Link
+            className="nav-item"
+            target="_blank"
+            href="https://github.com/JamesGeneser"
+          >
+            Github
           </Nav.Link>
 
           <Resume />

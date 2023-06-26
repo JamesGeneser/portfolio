@@ -13,39 +13,18 @@ function Contact() {
   return (
     <>
       <Button className="nav-item navElement" variant="" onClick={handleShow}>
-        Contact Me
+        Contact Info
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal size="sm" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title className="text-dark">Contact Me</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label className="text-dark sub">Your Email</Form.Label>
-              <Form.Control type="email" />
-              <Form.Text className="text-dark text-muted"></Form.Text>
-            </Form.Group>
-
-            <Form.Group
-              className="mb-3"
-              controlId="contactForm.ControlTextarea1"
-            >
-              <Form.Label className="text-dark sub ">Your Message</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
-              Send
-            </Button>
-          </Form>
+        <Modal.Body className="contact-info">
+          <p>email: jamesgeneser@gmail.com</p>
+          <p>phone: (319)-538-3074</p>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Exit
-          </Button>
-        </Modal.Footer>
+        <Modal.Footer></Modal.Footer>
       </Modal>
     </>
   );
