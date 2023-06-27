@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5e7bdfc8.css",
-    "main.js": "/portfolio/static/js/main.5fb6444d.js",
+    "main.css": "/portfolio/static/css/main.32c6e133.css",
+    "main.js": "/portfolio/static/js/main.55980fb6.js",
     "static/media/DiscoveringDenver.png": "/portfolio/static/media/DiscoveringDenver.1386e1e6631fc915583c.png",
     "static/media/birdNerd.png": "/portfolio/static/media/birdNerd.ad9894e3b900cd7e3742.png",
     "static/media/Librarian.png": "/portfolio/static/media/Librarian.afc8de77120b97c1e222.png",
@@ -10,11 +10,11 @@
     "static/media/profile.jpg": "/portfolio/static/media/profile.c93f8ae2076602c31487.jpg",
     "static/media/universityDenverBootcamp.png": "/portfolio/static/media/universityDenverBootcamp.7d4202799bc48a8a0a7d.png",
     "index.html": "/portfolio/index.html",
-    "main.5e7bdfc8.css.map": "/portfolio/static/css/main.5e7bdfc8.css.map",
-    "main.5fb6444d.js.map": "/portfolio/static/js/main.5fb6444d.js.map"
+    "main.32c6e133.css.map": "/portfolio/static/css/main.32c6e133.css.map",
+    "main.55980fb6.js.map": "/portfolio/static/js/main.55980fb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e7bdfc8.css",
-    "static/js/main.5fb6444d.js"
+    "static/css/main.32c6e133.css",
+    "static/js/main.55980fb6.js"
   ]
 }
