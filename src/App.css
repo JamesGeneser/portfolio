@@ -57,15 +57,8 @@ text-align: right;
 .bootcampStamp{
     max-width:100%;
 
-    /* max-width: 20vh ;
-    max-height: 20vh; */
 
     
-}
-.stamp-subtitle{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 24px;
-    text-align: right;
 }
 
 .aboutMe{
@@ -232,7 +225,7 @@ min-height: 10vh;
         max-width: 110vh;
     } */
     .title{
-        font-size: 60px ;
+        font-size: 80px ;
        }
        .skillItem{
         font-size: 12px ;
@@ -240,7 +233,7 @@ min-height: 10vh;
     
         padding: 2vh;
     }
-    
+  
     .item{
         font-size: 40px;
     }
@@ -261,7 +254,7 @@ min-height: 10vh;
         text-align: right;
      
     }
-    
+
     .item{
         font-size: 30px;
     }
