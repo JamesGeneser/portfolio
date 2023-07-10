@@ -17,40 +17,40 @@ export default function Home() {
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
-  // useLayoutEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     gsap.set(".profileImg", { autoAlpha: 0 });
-  //     gsap.set(".introTxt", { autoAlpha: 0 });
-  //     gsap.set(".scroll", { autoAlpha: 0 });
-  //     gsap.set(".skill-title", { autoAlpha: 0 });
-  //     gsap.set(".carousel", { autoAlpha: 0 });
-  //     let tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         delay: 5,
-  //         trigger: ".scroll",
-  //         start: "top center",
-  //       },
-  //     });
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.set(".profileImg", { autoAlpha: 0 });
+      gsap.set(".introTxt", { autoAlpha: 0 });
+      gsap.set(".scroll", { autoAlpha: 0 });
+      gsap.set(".skill-title", { autoAlpha: 0 });
+      gsap.set(".carousel", { autoAlpha: 0 });
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          delay: 5,
+          trigger: ".scroll",
+          start: "top center",
+        },
+      });
 
-  //     tl.to(".profileImg", { autoAlpha: 1, duration: 1, delay: 0.5 });
+      tl.to(".profileImg", { autoAlpha: 1, duration: 1, delay: 0.5 });
 
-  //     tl.to(".introTxt", { autoAlpha: 1, duration: 1 });
+      tl.to(".introTxt", { autoAlpha: 1, duration: 1 });
 
-  //     tl.to(".scroll", { autoAlpha: 1, duration: 1 });
-  //     tl.to(".skill-title", { autoAlpha: 1, duration: 1 });
-  //     tl.from(".skillItem", {
-  //       x: -2000,
-  //       duration: 1.5,
-  //       ease: "elastic.out(1, 1)",
-  //     });
-  //     // tl.to(".carousel", { autoAlpha: 1, duration: 1, delay: 1 });
-  //     tl.to(".carousel", { y: 500 });
-  //     tl.to(".carousel", { autoAlpha: 1, duration: 1 });
-  //     tl.to(".carousel", { y: 0, duration: 1 });
-  //   });
+      tl.to(".scroll", { autoAlpha: 1, duration: 1 });
+      tl.to(".skill-title", { autoAlpha: 1, duration: 1 });
+      tl.from(".skillItem", {
+        x: -2000,
+        duration: 1.5,
+        ease: "elastic.out(1, 1)",
+      });
+      // tl.to(".carousel", { autoAlpha: 1, duration: 1, delay: 1 });
+      tl.to(".carousel", { y: 500 });
+      tl.to(".carousel", { autoAlpha: 1, duration: 1 });
+      tl.to(".carousel", { y: 0, duration: 1 });
+    });
 
-  //   return () => ctx.revert();
-  // }, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <>
@@ -79,7 +79,7 @@ export default function Home() {
         </Row>
       </Container>
       <Row className="scroll d-flex justify-content-end me-3">
-        <Col xs={7} s={5} md={5} lg={7}>
+        <Col xs={7} s={5} md={5} lg={7} className="d-flex justify-content-end ">
           <img
             className="bootcampStamp"
             src={require("../images/universityDenverBootcamp.png")}
@@ -123,8 +123,8 @@ export default function Home() {
       </Container>
 
       <Container className="mt-5 carousel">
-        <Row className="m-1">
-          <h4 className="carousel-title">See My Portfolio</h4>
+        <Row className="m-1 mt-3">
+          <h4 className="carousel-title">My Portfolio</h4>
         </Row>
 
         <Row>
