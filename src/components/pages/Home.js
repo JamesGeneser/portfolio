@@ -25,11 +25,11 @@ export default function Home() {
       gsap.set(".skill-title", { autoAlpha: 0 });
       gsap.set(".carousel", { autoAlpha: 0 });
       let tl = gsap.timeline({
-        scrollTrigger: {
-          delay: 5,
-          trigger: ".scroll",
-          start: "top center",
-        },
+        // scrollTrigger: {
+        //   delay: 5,
+        //   trigger: ".scroll",
+        //   start: "top top",
+        // },
       });
 
       tl.to(".profileImg", { autoAlpha: 1, duration: 1, delay: 0.5 });
