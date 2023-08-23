@@ -102,6 +102,7 @@ export default function Home() {
         </Row>
       </Container>
 
+      <h4 className="carousel-title m-3">My Portfolio</h4>
       <Container fluid className="colorado-birds-card">
         <Row>
           <Col lg={8}>
@@ -109,12 +110,25 @@ export default function Home() {
             <Card>
               <Card.Img src={require("../images/ColoradoBirds.png")}></Card.Img>
               <Card.Link
+                className="bird-link"
                 target={"_blank"}
                 href="https://jamesgeneser.https://jamesgeneser.github.io/Colorado-Bird-Nerd/github.io/Colorado-Bird-Nerd/"
-              ></Card.Link>
+              >
+                {" "}
+                Vist Colorado Birds
+              </Card.Link>
             </Card>
           </Col>
-          <Col></Col>
+          <Col>
+            <h4>Birds of Colorado</h4>
+            <p>
+              An education resource for those wanting to learn about the birds
+              of Colorado. Read about basic information, hear bird calls and
+              songs, and learn about migration patters. This site was built with
+              React, and frameworked with Bootstrap. All images, sound files,
+              and data are from the Cornell Lab.
+            </p>
+          </Col>
         </Row>
       </Container>
 

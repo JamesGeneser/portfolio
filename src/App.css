@@ -180,7 +180,10 @@ padding: 3vh;
 }
 
 .colorado-birds-card{
-  
+  margin-top: 6vh;
+}
+.bird-link{
+    font-size: 2vw;
 }
 
 .portfolioCard{
