@@ -19,10 +19,7 @@
     max-height: 100px; 
 }
 
-/* .profile-intro{
-    width: 100%;
-    flex-direction: row;
-} */
+
 
 .profileImg{
 text-align: center;
@@ -32,9 +29,7 @@ text-align: center;
    margin:2vh
 }
 
-/* .profile-image-col{
-    max-width: 10vh;
-} */
+
 
 .title{
 
@@ -117,11 +112,7 @@ padding: 3vh;
     transform: scale(1.4);
 
 }
-/* .navButtonCollapse{
-min-width: 20vh;
-min-height: 10vh;
- 
-} */
+
 
 
 .portfolio{
@@ -188,6 +179,9 @@ min-height: 10vh;
     
 }
 
+.colorado-birds-card{
+  
+}
 
 .portfolioCard{
     font-family: 'Raleway';
@@ -210,20 +204,9 @@ min-height: 10vh;
 
 
 
-/* 
-@media only screen and (min-width: 780px) and (max-width:1200px) {
-   .title{
-    font-size: 80px ;
-   }
-   .profileImg{
-    max-width: 80vh;
-   }
-    
-} */
+
   @media all and (min-width: 780px) and (max-width: 1200px) {
-    /* .profileImg{
-        max-width: 110vh;
-    } */
+ 
     .title{
         font-size: 80px ;
        }
@@ -242,9 +225,7 @@ min-height: 10vh;
     .logo{
         max-height: 200px; 
     }
-    /* .profileImg{
-        max-width: 30vh;
-    } */
+ 
     .title{
         font-size: 25px ;
         padding: 1vh;
@@ -275,9 +256,7 @@ min-height: 10vh;
     }
        }
        @media  all and (max-width: 359px) {
-        /* .profileImg{
-            max-width: 40vh;
-        } */
+     
         .title{
             font-size: 24px ;
            }

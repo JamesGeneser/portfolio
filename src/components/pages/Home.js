@@ -3,11 +3,12 @@ import { React, useState, useLayoutEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 import Carousel from "react-bootstrap/Carousel";
+import { Card } from "react-bootstrap";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,13 +25,7 @@ export default function Home() {
       gsap.set(".scroll", { autoAlpha: 0 });
       gsap.set(".skill-title", { autoAlpha: 0 });
       gsap.set(".carousel", { autoAlpha: 0 });
-      let tl = gsap.timeline({
-        // scrollTrigger: {
-        //   delay: 5,
-        //   trigger: ".scroll",
-        //   start: "top top",
-        // },
-      });
+      let tl = gsap.timeline({});
 
       tl.to(".profileImg", { autoAlpha: 1, duration: 1, delay: 0.5 });
 
@@ -88,21 +83,6 @@ export default function Home() {
         </Col>
       </Row>
       <Container className="">
-        {/* <Row className="scroll d-none d-sm-none d-md-block border m-4">
-          <Col xs={5} sm={7} md={4} lg={4} className="scroll m-0">
-            <img
-              className="bootcampStamp"
-              src={require("../images/universityDenverBootcamp.png")}
-              alt="DU logo within stamp signifying graduation from the University of Denver Bootcamp"
-            ></img>
-          </Col>
-          <Col xs={5} sm={10} md={7} lg={4} className="scroll m-0">
-            <p className="item">
-              Full Stack Flex Graduate from the University of Denver
-            </p>
-          </Col>
-        </Row> */}
-
         <Row className="m-2">
           <h3 className="skill-title ">Skilled In</h3>
         </Row>
@@ -122,9 +102,37 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className="mt-5 carousel">
+      <Container fluid className="colorado-birds-card">
+        <Row>
+          <Col lg={8}>
+            {" "}
+            <Card>
+              <Card.Img src={require("../images/ColoradoBirds.png")}></Card.Img>
+              <Card.Link
+                target={"_blank"}
+                href="https://jamesgeneser.https://jamesgeneser.github.io/Colorado-Bird-Nerd/github.io/Colorado-Bird-Nerd/"
+              ></Card.Link>
+            </Card>
+          </Col>
+          <Col></Col>
+        </Row>
+      </Container>
+
+      {/* <Container className="mt-5 carousel">
         <Row className="m-1 mt-3">
           <h4 className="carousel-title">My Portfolio</h4>
+        </Row>
+
+        <Row>
+          <Card>
+            <Card.Link
+              target={"_blank"}
+              href="https://jamesgeneser.github.io/Colorado-Bird-Nerd/"
+            >
+              Colorado Bird Nerd
+            </Card.Link>
+            <Card.Img></Card.Img>
+          </Card>
         </Row>
 
         <Row>
@@ -152,7 +160,7 @@ export default function Home() {
             </Carousel.Item>
           </Carousel>
         </Row>
-      </Container>
+      </Container> */}
     </>
   );
 }
