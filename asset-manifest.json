@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ede3686f.css",
-    "main.js": "/portfolio/static/js/main.1910047d.js",
+    "main.css": "/portfolio/static/css/main.e337593d.css",
+    "main.js": "/portfolio/static/js/main.11ee20fb.js",
     "static/media/ColoradoBirds.png": "/portfolio/static/media/ColoradoBirds.4078964d056caec16914.png",
     "static/media/profileLogo.png": "/portfolio/static/media/profileLogo.de2bf0f204e8087ff9fa.png",
     "static/media/Resume23Big.jpg": "/portfolio/static/media/Resume23Big.112c624e9390a3186bc7.jpg",
     "static/media/profile.jpg": "/portfolio/static/media/profile.c93f8ae2076602c31487.jpg",
     "static/media/universityDenverBootcamp.png": "/portfolio/static/media/universityDenverBootcamp.7d4202799bc48a8a0a7d.png",
     "index.html": "/portfolio/index.html",
-    "main.ede3686f.css.map": "/portfolio/static/css/main.ede3686f.css.map",
-    "main.1910047d.js.map": "/portfolio/static/js/main.1910047d.js.map"
+    "main.e337593d.css.map": "/portfolio/static/css/main.e337593d.css.map",
+    "main.11ee20fb.js.map": "/portfolio/static/js/main.11ee20fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ede3686f.css",
-    "static/js/main.1910047d.js"
+    "static/css/main.e337593d.css",
+    "static/js/main.11ee20fb.js"
   ]
 }
