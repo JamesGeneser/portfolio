@@ -93,10 +93,7 @@ padding: 3vh;
    
 }
 
-.navbar{
- 
 
-}
 
 .nav-item{
     color: white !important;
@@ -184,6 +181,8 @@ padding: 3vh;
 }
 .bird-link{
     font-size: 2vw;
+    background-color: rgb(220, 104, 41);
+color: white !important;
 }
 
 .portfolioCard{
